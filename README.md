@@ -6,7 +6,7 @@
 
 ## Prerequisites
 - Node
-- yarn or npm
+- npm
 
 ## Installing and Running
 1. git clone https://github.com/rebeccamoraes/desafio-capgemini.git
