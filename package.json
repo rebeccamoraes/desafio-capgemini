@@ -4,7 +4,7 @@
   "description": "Desafio de Programação - Academia Capgemini",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node-dev --transpile-only --ignore-watch node_modules --respaw src/server.ts"
+    "dev": "ts-node-dev src/server.ts"
   },
   "repository": {
     "type": "git",
