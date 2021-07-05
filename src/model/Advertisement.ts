@@ -7,6 +7,8 @@ class Advertisement {
   endDate: Date;
   investmentPerDay: number;
   maxViews: number;
+  maxClicks: number;
+  maxShares: number;
 
   constructor(name, client, startDate, endDate, investmentPerDay) {
     this.name = name;
@@ -17,8 +19,12 @@ class Advertisement {
     
     const diff = Math.abs(this.endDate.getTime() - this.startDate.getTime()); 
     const days = Math.ceil(diff / (10000 * 360 * 24));
-    console.log("Days: ", days);
-    this.maxViews = maxViews(investmentPerDay * days);
+    
+    const totalAmount = investmentPerDay * days;
+
+    this.maxViews = maxViews(totalAmount);
+    this.maxClicks = maxClicks(totalAmount);
+    this.maxShares = maxShares(totalAmount);
   }
 }
 
